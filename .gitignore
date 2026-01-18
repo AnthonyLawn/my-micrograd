@@ -75,3 +75,6 @@ venv.bak/
 
 # Windows
 Thumbs.db
+
+# Project data files
+data/

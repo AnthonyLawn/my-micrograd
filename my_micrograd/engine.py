@@ -69,23 +69,23 @@ class Value:
     def __neg__(self):
         return self * -1
     
-    def radd(self, other):
+    def __radd__(self, other):
         return self + other
     
-    def rmul(self, other):
+    def __rmul__(self, other):
         return self * other
     
-    def sub(self, other):
+    def __sub__(self, other):
         return self + (-other)
     
-    def rsub(self, other):
+    def __rsub__(self, other):
         return other + (-self)
     
-    def truediv(self, other):
+    def __truediv__(self, other):
         return self * other ** -1
     
-    def rtruediv(self, other):
+    def __rtruediv__(self, other):
         return other * self ** -1
     
-    def repr(self):
+    def __repr__(self):
         print(f'Value(self = {self.data}, grad = {self.grad})')
